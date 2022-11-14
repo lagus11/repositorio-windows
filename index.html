@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
   </head>
   <body>
+    <h1>Login with FACEBOOK</h1>
     <script>
       function statusChangeCallback(response) {
         // Called with the results from FB.getLoginStatus().
@@ -33,7 +34,7 @@
           appId: "483247036952314",
           cookie: true, // Enable cookies to allow the server to access the session.
           xfbml: true, // Parse social plugins on this webpage.
-          version: "{api-version}", // Use this Graph API version for this call.
+          version: "v2.8", // Use this Graph API version for this call.
         });
 
         FB.getLoginStatus(function (response) {
